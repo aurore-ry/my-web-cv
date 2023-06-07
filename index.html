@@ -7,16 +7,57 @@
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="navigation_layout">
-      <div id="stars"></div>
+    <div id="heading_layout">
+      <canvas id="canvas"></canvas>
       <div class="intro_title"></div>
       <span class="reversed_shadow"></span>
     </div>
-    <div id="heroe_layout">
-      <div class="flex_center_column">
-        <h2 class="growth_title">Hello</h2>
-        <p>loremp ipsum lorem ipipipi</p>
-      </div>
+    <div id="navigation_layout">
+      <nav>
+        <div class="flex_center_column">
+          <h2 class="growth_title_white">Choose your destination.</h2>
+          <a href="#myself"> I introduce myself.</a>
+          <a> My experience</a>
+          <a>A few small projects.</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="content_wrapper">
+      <section id="myself">
+        <div class="flex_row">
+          <img
+            id="rocket"
+            src="./public/img/rocket-svgrepo-com.svg"
+            width="260"
+            style="padding-top: 12px"
+          />
+          <div class="flex_center_column">
+            <h3 class="h3_style_for_whitness_background">Who i am</h3>
+            <p>
+              Lorem ipsum lorem ip sum Lorem ipsum lorem ip sumLorem ipsum lorem
+              ip sumLorem ipsum lorem ip sumLorem ipsum lorem ip sum Lorem ipsum
+              lorem ip sum Lorem ipsum lorem ip sumLorem ipsum lorem ip sumLorem
+              ipsum lorem ip sumLorem ipsum lorem ip sum
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="myself">
+        <div>
+          <div class="flex_center_column">
+            <h3 class="h3_style_for_whitness_background">My background</h3>
+            <p>
+              Lorem ipsum lorem ip sum Lorem ipsum lorem ip sumLorem ipsum lorem
+              ip sumLorem ipsum lorem ip sumLorem ipsum lorem ip sum Lorem ipsum
+              lorem ip sum Lorem ipsum lorem ip sumLorem ipsum lorem ip sumLorem
+              ipsum lorem ip sumLorem ipsum lorem ip sum Lorem ipsum lorem ip
+              sum Lorem ipsum lorem ip sumLorem ipsum lorem ip sumLorem ipsum
+              lorem ip sumLorem ipsum lorem ip sum
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="./src/index.js"></script>
     <script src="./src/starsAnim.js"></script>
