@@ -62,9 +62,10 @@ body {
 .flex_row {
   display: flex;
   flex-flow: row nowrap;
+  flex: 1;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
   #rocket {
     width: 120px;
     padding: 12px;
@@ -73,13 +74,23 @@ body {
     width: 120px;
     padding: 12px;
   }
+
+  .flex_row,
+  #experience {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
 .flex_center_column {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  flex-flow: column;
   justify-content: center;
-  gap: 12px;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
 }
 
 a {
@@ -95,7 +106,7 @@ a:hover {
 }
 
 .content_wrapper {
-  max-width: 960px;
+  max-width: 1220px;
   margin: 30px auto;
 }
 
@@ -126,10 +137,10 @@ p {
   justify-content: center;
 }
 
-.flex_row_end {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
+.img_hover:hover {
+  opacity: 0.5;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
 footer {
