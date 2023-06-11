@@ -149,6 +149,10 @@ body {
     display: flex;
     gap: 8px;
   }
+
+  #ufo_container {
+    right: 3% !important;
+  }
 }
 
 .flex_center_column {
@@ -176,23 +180,24 @@ a:hover {
   margin: 30px auto;
 }
 
+.content_wrapper p {
+  line-height: 1.7;
+  padding: 8px;
+}
+
 #ufo_container {
   position: fixed;
   align-self: flex-end;
   margin-bottom: 10px;
   margin-top: 40px;
-  padding-right: 12px;
+  right: 1%;
+  z-index: 1;
 }
 #myself {
   width: 100%;
 }
 .h3_style_for_whitness_background {
   color: rgb(8, 37, 127);
-}
-
-p {
-  line-height: 1.7;
-  padding: 8px;
 }
 
 #experience_content {
@@ -266,8 +271,13 @@ p {
 }
 
 footer {
+  height: 110px;
   padding: 4px;
   background-color: rgba(1, 11, 56, 0.95);
+}
+
+.footer_content {
+  padding: 4px;
 }
 
 footer p {
