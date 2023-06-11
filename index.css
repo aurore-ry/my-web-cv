@@ -45,13 +45,50 @@ body {
     color-stop(20%, transparent), to(rgba(0, 0, 0, 0.4));
   color: rgba(208, 204, 204, 0.392);
 }
+
+/* #red_planet {
+  animation: floating 4s ease-in-out infinite;
+} */
+#planet_1 {
+  align-self: start;
+  padding-left: 40px;
+  animation: floating 4s ease-in-out infinite;
+}
+
+#spaceman {
+  animation: floating 4s ease-in-out infinite;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 28px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.flex_space_container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.space_container {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  grid-template-rows: 120px 120px;
+  grid-auto-flow: row;
+}
+
 #navigation_layout {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   height: 50vh;
-  padding: 18px;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.95);
 }
@@ -59,94 +96,27 @@ body {
   color: rgb(251, 251, 251);
 }
 
-.pacman {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: #ffe100;
-  position: relative;
-  margin-top: 20px;
-}
-
-.pacman__eye {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  top: 20px;
-  right: 40px;
-  background: #333333;
-}
-.pacman__mouth {
-  background: #000;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
-  animation-name: eat;
-  animation-duration: 0.7s;
-  animation-iteration-count: infinite;
-}
-
-.pacman_food {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: #fff;
-  border-radius: 50%;
-  top: 40%;
-  left: 120px;
-  animation: movinFood 0.7s infinite;
-}
-
-@keyframes eat {
-  0% {
-    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
-  }
-  25% {
-    clip-path: polygon(100% 60%, 44% 48%, 100% 40%);
-  }
-  50% {
-    clip-path: polygon(100% 50%, 44% 48%, 100% 50%);
-  }
-  75% {
-    clip-path: polygon(100% 59%, 44% 48%, 100% 35%);
-  }
-  100% {
-    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
-  }
-}
-
-@keyframes movinFood {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-}
 .space_button {
   width: 200px;
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 12px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
   background: transparent;
   color: white;
-  border: 1px solid rgb(255, 234, 3);
+  border: 1px solid rgb(180, 241, 250);
   border-radius: 5px;
 }
 
 .space_button:hover {
   cursor: pointer;
-  color: white;
+  color: rgb(53, 236, 252);
   font-weight: bold;
-  border: 2px solid rgb(255, 155, 4);
+  border: 2px solid rgb(4, 226, 255);
 }
 
 .flex_row {
@@ -171,6 +141,11 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+  }
+  .flex_project {
+    padding: 12px;
+    display: flex;
+    gap: 8px;
   }
 }
 
@@ -227,12 +202,22 @@ p {
   justify-content: center;
 }
 
+#few_small_project {
+  margin-bottom: 38px;
+}
+#h3_project {
+  display: flex;
+  justify-content: center;
+}
 .img_hover:hover {
   opacity: 0.5;
   transition: 0.5s ease;
   cursor: pointer;
 }
 
+.flex_project {
+  padding: 12px;
+}
 footer {
   height: 122px;
   padding: 12px;
