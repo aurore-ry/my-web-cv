@@ -124,28 +124,35 @@
       </div>
       <section id="few_small_project">
           <h3 class="h3_style_for_whitness_background" id="h3_project">A few small projects</h3>
-          <div class="flex_row flex_project">
-            <div class="flex_center_column">
-              <a href="https://aurore-ry.github.io/flexbox-minesweeper/" target="_blank">
-                <img class="img_hover" src="./public/img/minesweeperred.png" style="border: 2px solid #000;"/>
+          <div class="slider flex_row_center">
+            <div class="slider_viewport">
+
+              <div class="slide">
+                <a href="https://aurore-ry.github.io/flexbox-minesweeper/" target="_blank">
+                <img class="img_hover" src="./public/img/minesweeper1.png" />
               </a>
               <figcaption>Minesweeper.</figcaption>
             </div>
-            <div class="flex_center_column">
-              <a>
-                <img class="img_hover" src="./public/img/charactersmanagerred.png" style="border: 2px solid #000;"/>
+            <div class="slide">
+              <a href="https://characters-manager.netlify.app/" target="_blank">
+                <img class="img_hover" src="./public/img/charactersmanager1.png" />
               </a>
-                <figcaption >Characters manager.</figcaption>
-            </div>
-            <a>
-              <div class="flex_center_column">
-                <img class="img_hover" src="./public/img/squidpomodrored.png" style="border: 2px solid #000;"/>
+              <figcaption >Characters manager.</figcaption>
+              </div>
+              <div class="slide">
+                <a href="https://squid-pomodoro.netlify.app/" target="_blank">
+                <img class="img_hover" src="./public/img/1squidpomodrored.png" />
               </a>
-                <figcaption>
+              <figcaption>
                 Pomodoro inspired by squid game.
               </figcaption >
             </div>
-          </div>     
+            <button class="button_slide prev"><</button>
+            <button class="button_slide next">></button>
+
+          </div>
+          </div>
+          </div>
       </section>
     </div>
     <footer>
@@ -162,5 +169,6 @@
     </footer>
     <script src="./src/index.js"></script>
     <script src="./src/starsAnim.js"></script>
+    <script src="./src/carousel.js"></script>
   </body>
 </html>
