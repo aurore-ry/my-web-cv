@@ -12,7 +12,7 @@ function displayWords(i) {
   animatedHeading.innerHTML = words[i];
   animatedShadow.innerHTML = reversedShadow[i];
 
-  const timeouId = setTimeout(function () {
+  let timeouId = setTimeout(function () {
     if (i < 2) {
       displayWords(i + 1);
     } else {
