@@ -46,9 +46,6 @@ body {
   color: rgba(208, 204, 204, 0.392);
 }
 
-/* #red_planet {
-  animation: floating 4s ease-in-out infinite;
-} */
 #planet_1 {
   align-self: start;
   padding-left: 40px;
@@ -159,7 +156,6 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   flex: 1;
 }
 
@@ -270,9 +266,12 @@ p {
 }
 
 footer {
-  height: 122px;
-  padding: 12px;
+  padding: 4px;
   background-color: rgba(1, 11, 56, 0.95);
+}
+
+footer p {
+  color: white;
 }
 
 #moon:hover {
