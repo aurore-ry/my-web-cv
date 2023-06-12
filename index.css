@@ -163,6 +163,10 @@ body {
   flex: 1;
 }
 
+#google_translate_element {
+  padding-top: 18px;
+}
+
 a {
   text-decoration: none;
   color: #d2fafd;
